@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Score Keeper</title>
+    <link rel="stylesheet" href="scorekeeper.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis&family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="cardContainer">
+      <header class="cardHeader">
+        <img
+          src="https://images.pexels.com/photos/187329/pexels-photo-187329.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="palita de ping pong"
+        />
+        <h3>Ping Pong Score Keeper</h3>
+      </header>
+      <section class="cardBody">
+        <div class="cardContent">
+          <h1 class="counterText">
+            <span id="playerOneCounter">0</span>
+            <span>to</span>
+            <span id="playerTwoCounter">0</span>
+          </h1>
+          <h2>Use the buttons below to keep score</h2>
+        </div>
+        <div class="selector">
+          <label for="winningValueSelect" class="playingToLabel">Playing to</label>
+          <select name="winningValueSelect" id="winningValueSelect"></select>
+        </div>
+        <div class="cardActions">
+          <button class="info" id="playerOneAddButton">+1 PLAYER ONE</button>
+          <button class="error" id="playerTwoAddButton">+1 PLAYER TWO</button>
+          <button class="reset" id="resetScore">RESET</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
+
+<script src="scorekeeper.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>

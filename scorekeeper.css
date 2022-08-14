@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+html {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.cardContainer {
+  margin: 0;
+  padding: 0;
+  box-shadow: 0px 0px 13px 6px rgba(200, 200, 200, 0.75);
+  width: fit-content;
+  height: fit-content;
+  padding: 25px;
+}
+
+.cardHeader {
+  border-bottom: 0.5px solid rgb(200, 200, 200);
+}
+
+img {
+  max-height: 280px;
+  max-width: auto;
+  border: 0.5px solid rgb(200, 200, 200);
+}
+
+.counterText {
+  font-size: 40px;
+  font-weight: 200;
+  padding: 0.5px 2px;
+  padding-bottom: 40px;
+  padding-top: 30px;
+  font-family: "Open Sans", sans-serif;
+  border-bottom: 0.5px solid rgb(238, 238, 238);
+}
+
+.won {
+  color: green;
+  font-weight: bold;
+}
+
+.lost {
+  color: red;
+}
+
+h2 {
+  font-size: 17px;
+  font-weight: 100;
+  padding-top: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+h3 {
+  font-size: 15px;
+  padding: 15px 0px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.selector {
+  padding: 18px 0px;
+}
+
+#winningValueSelect {
+  border-radius: 25px;
+  padding: 0px 5px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+.playingToLabel {
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  padding-right: 8px;
+}
+
+.playingToLabel:disabled {
+  background-color: rgba(200, 200, 200, 0.75);
+}
+
+button {
+  width: 150px;
+  height: 30px;
+  border-width: 0px;
+  color: aliceblue;
+  font-weight: 200;
+  font-size: 16px;
+  font-family: "Dosis", sans-serif;
+  box-shadow: 0px 0px 50px -4px rgba(255, 251, 251, 0.75) inset;
+}
+
+button.info {
+  background-color: #00afb9;
+}
+
+button.info:hover {
+  background-color: #00b0b981;
+}
+
+button.error {
+  background-color: #f07167;
+}
+
+button.error:hover {
+  background-color: #f0706786;
+}
+
+button.reset {
+  background-color: #0081a7;
+}
+
+button.reset:hover {
+  background-color: #0080a77e;
+}
+
+button:disabled,
+button:disabled:hover {
+  background-color: rgba(200, 200, 200, 0.95);
+}
